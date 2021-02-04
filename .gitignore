@@ -1,11 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # foldery z obrazkami
-# /img
-# /cv
-# /favicon
-# /fonts
-#zmianagit 
+/img
+/cv
+/favicon
+/fonts
 
 # inne 
 # debug.log
