@@ -110,7 +110,7 @@
   
   @keyframes load-java {
     0% { width: 0; }
-    100% { width: 30%; }
+    100% { width: 40%; }
   }
 
   .sql-skill {
@@ -143,7 +143,7 @@
   
   @keyframes load-git {
     0% { width: 0; }
-    100% { width: 20%; }
+    100% { width: 30%; }
   }
 
   .office-skill {
@@ -200,109 +200,3 @@
     0% { width: 0; }
     100% { width: 30%; }
   }
-
-
-
-  //HTML:
-//   <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>CSS3</h3>
-// </div>
-
-// <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>HTML5</h3>
-// </div>
-
-// <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>JavaScript</h3>
-// </div>
-
-// <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>Pakiet Office</h3>
-// </div>
-
-// <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>Photoshop</h3>
-// </div>
-
-// <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>Figma</h3>
-// </div>
-
-// <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>Jęz. Angielski</h3>
-// </div>
-
-// <div class="circle-container">
-//   <div class="circle">
-//     <div class="number">
-//       <h2>80<span>%</span></h2>
-//     </div>
-//   </div>
-//   <h3>Idesign/Illustraotr</h3>
-// </div>
-
-// .circle-container {
-//     padding: 2%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-//     width: 20%;
-//     height: 50%;
-// }
-
-// .circle {
-//     position: absolute;
-//     width: 90%;
-//     height: 50%;
-//     //border-radius: 100%;
-//     background-color: wheat;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     position: relative;
-// }
-
-// .number {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// }
