@@ -258,19 +258,19 @@
 }
 
 .warxuaroz {
-  background-image: url("img/Warxuaroz/pionowe-960.jpg");
+  background-image: url("../img/Warxuaroz/pionowe-960.jpg");
   background-size: cover;
 }
 
 .wyjec {
-  background-image: url("img/Wyjec/wyjec-etykieta.png");
+  background-image: url("../img/Wyjec/wyjec-etykieta.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .websites {
-  background-image: url("img/Margo/margo-landing.webp");
+  background-image: url("../img/Margo/margo-landing.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -787,7 +787,7 @@ ul, a {
 }
 
 body {
-  background-image: url("img/tlobody.webp");
+  background-image: url("../img/tlobody.webp");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
