@@ -1,0 +1,305 @@
+// .about {
+//     background-image: url("img/book.gif");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+// .about {
+//     background-image: url("img/book5.png");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// .PaperBg {
+//     background: url("img/paper1.png");
+//     background-position: center;
+//     background-size: fill;
+//     background-repeat: no-repeat;
+// }
+
+.Portfolio-PaperBg-img{
+    position: absolute;
+    // top: 0;
+    left: 0;
+    object-fit: fill;
+    width: 100%;
+    min-height: 95vh;
+    z-index: -1;
+    height: 100%;
+    //width: auto;
+    //position: relative; //zmiana dn 11.12.2020 przy probach max-heightowania sekcji about
+}
+
+.Portfolio-TabletBg-img{       
+    object-fit: contain;
+    width: 100%;
+    //height: 100%;
+    //width: auto;
+    //position: relative; //zmiana dn 11.12.2020 przy probach max-heightowania sekcji about
+}
+
+.MeAboutBg-img {
+    object-fit: contain;
+    //width: 90%;
+    height: 75vh;
+}
+
+// .AboutBg-img{       
+//     object-fit: fill;
+//     width: 100%;
+//     max-height: 95vh;
+// }
+
+.about-container { // display przy 1100 px
+    display: none;
+}
+
+.portfolio-container, .skills-container /*, .about-container*/ {
+    // display: grid; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    // grid-template-columns: 1.5fr 2fr;
+    // width: 100vw;
+    // height: 100vh;
+    // align-items: center;
+
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-grow: 1;
+    max-width: 100vw;
+    min-height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+// .about-container {
+//     display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+//     flex-grow: 1;
+//     max-width: 100vw;
+//     max-height: 100vh;
+//     align-items: center;
+//     position: relative;
+// }
+
+// .about-container{
+
+//     display: -webkit-inline-box; /* OLD - iOS 6-, Safari 3.1-6 */
+//     display: -moz-inline-box; /* OLD - Firefox 19- (buggy but mostly works) */
+//     display: -webkit-inline-flex; /* TWEENER - IE 10 */
+//     display: -ms-inline-flexbox;/* NEW - Chrome */
+// display: inline-flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+// /**	background-color: rgba(0, 0, 0, 0.479); */
+// height: 100vh; /** % */
+// position: relative;
+
+
+// }
+
+
+.portfolio-container > div, .skills-container > div {
+    position: relative;
+}
+
+.about-container > div {
+    position: relative;
+    text-align: center;
+}
+
+//do felxbox
+.left {
+    width: 42%;
+    min-height: 95vh;
+}
+
+.right {
+    width: 58%;
+}
+
+// .portfolio-container > .left {
+
+//     background-size: contain;
+//     background-repeat: no-repeat; 
+//     background-color: brown;
+//     background-position: center;
+
+// }
+
+// .portfolio-container > .right {
+
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-color: cadetblue;
+//     background-position: center;
+
+//}
+
+// .paper {
+//     background: url(img/paper1.png);
+// }
+
+// .tablet {
+//     background: url(img/tablet.png);
+// }
+
+.portfolio-item, .about-me, .skills-item {
+    width: 100%;
+    min-height: 95vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    //overflow-y: hidden;
+}
+
+.portfolio-picker {
+
+    display: flex;
+    position: absolute;
+    top:8.5%;
+    left:8%;
+    width: 85%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    gap: 1%;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px wheat;
+
+    .warxuaroz, .wyjec, .websites {
+        position: relative;
+        height: 100%;
+        width: 33%;
+        opacity: 0.5;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+            transition: all 0.20s linear;
+
+            .portfolio-name {
+                //transition: all 0.25s linear;
+                height: 25%;
+                align-items: top;
+              }
+
+              .opis {
+                visibility: visible;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                height: 15%;
+              //  transition: all 0.35s linear;                
+            }
+        }
+    }
+
+}
+
+  .warxuaroz{
+    background-image: url('img/Warxuaroz/pionowe-960.jpg');
+    background-size: cover;
+    
+    }
+    
+    .wyjec{
+    background-image: url('img/Wyjec/wyjec-etykieta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    
+    .websites{
+    background-image: url('img/Margo/margo-landing.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .portfolio-name {
+        display: flex;
+        color: #f2f2f2;
+        font-size: 1.3rem;
+        font-family: 'Lobster', normal;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 8%;    
+        background-color: rgba(21, 21, 22, 0.61);
+        justify-content: center;
+      }
+
+.opis {
+    visibility: hidden;
+    bottom:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.9rem;
+    position: absolute;
+    color: #f2f2f2;
+    width: 100%;
+    height: 8%; 
+}
+
+// Paper desciptions
+
+#warx-desc {    
+    display: none;
+} 
+#wyjec-desc{    
+    display: none;
+} 
+#websites-desc {    
+    display: none;
+}
+
+.return-paper {
+    // position: absolute;
+    // bottom:3%;
+    // right: 2%;
+    align-self: flex-end;
+    padding-bottom: 5.5%;
+    padding-right: 4%;
+    cursor: pointer;
+
+    svg {
+        height: 35px;
+        width: auto;
+        margin: auto;
+        object-fit: contain;
+        fill: rgb(66, 62, 62);
+        transition: transform 0.6s ease-in;
+        //filter:invert(1);
+   
+           &:hover {
+               fill: rgb(24, 24, 24);
+               transform: rotate(-360deg);
+               filter: drop-shadow(0 0 4px rgb(66, 66, 66));
+           }
+        }
+
+}
+
+.return {
+    //display: none;
+     position: absolute;
+     width: 4%;
+     height: 7%;     
+     bottom: 48.5%;
+     right: 1.7%;
+     border-radius: 100%;
+     background-color: black;
+     text-align: center;
+     cursor: pointer;
+ 
+     svg {
+     height: 85%;
+     width: auto;
+     margin: auto;
+     object-fit: contain;
+     fill: rgb(224, 111, 111);
+     transition: transform 0.3s ease-in;
+     //filter:invert(1);
+
+        &:hover {
+            fill: rgb(255, 49, 49);
+            transform: rotate(-180deg);
+            filter: drop-shadow(0 0 4px red);
+        }
+     }
+     
+   }

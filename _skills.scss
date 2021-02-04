@@ -1,0 +1,308 @@
+.skill-container {
+    box-sizing: border-box;
+    display: flex;
+    //flex-direction: column;
+    position: absolute;
+    top:8.5%;
+    left:8%;
+    width: 85%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    justify-content: space-between;
+    //align-items: center;
+    //flex-wrap: wrap;
+    box-shadow: 0px 0px 5px wheat;
+    font-family: Montserrat;
+    h3 {
+        font-size: 0.85rem;
+        margin-left: 5px;
+        align-self: center;
+    }
+    span {
+        font-size: 0.6rem;
+    }
+}
+
+.percent{
+    color: black;
+    margin-right: 3px;
+}
+
+.skill-name {
+    color: whitesmoke;
+}
+
+.skill-left, .skill-right {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+// .skill-left {
+//     align-self: flex-start;
+// }
+.skill-right {
+
+    transform: rotateY(-180deg);
+
+    h3 {
+        transform: rotateY(180deg);
+    }
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+}
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 37px;
+    width: 90%;
+  }
+  
+  .progress-value {
+    //box-shadow: 0 10px 10px -10px #fff;
+    border-radius: 100px;
+    height: 27px;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .html-skill {
+    background: rgb(235, 80, 9);
+    box-shadow: 2px 0px 8px rgb(255, 132, 101);
+    animation: load-html 3s normal forwards;
+  }
+  
+  @keyframes load-html {
+    0% { width: 0; }
+    100% { width: 95%; }
+  }
+
+  .css-skill {
+    background: rgb(15, 95, 243);
+    box-shadow: 2px 0px 8px rgb(56, 141, 253);
+    animation: load-css 3s normal forwards;
+  }
+  
+  @keyframes load-css {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+
+  .javaScript-skill {
+    background: rgb(255, 182, 25);
+    box-shadow: 2px 0px 8px rgb(252, 206, 107);
+    animation: load-java 3s normal forwards;
+  }
+  
+  @keyframes load-java {
+    0% { width: 0; }
+    100% { width: 30%; }
+  }
+
+  .sql-skill {
+    background: rgb(31, 247, 229);
+    box-shadow: 2px 0px 8px rgb(158, 235, 228);
+    animation: load-sql 3s normal forwards;
+  }
+  
+  @keyframes load-sql {
+    0% { width: 0; }
+    100% { width: 20%; }
+  }
+
+  .react-skill {
+    background: rgb(248, 145, 179);
+    box-shadow: 2px 0px 8px rgb(241, 94, 143);
+    animation: load-react 3s normal forwards;
+  }
+  
+  @keyframes load-react {
+    0% { width: 0; }
+    100% { width: 10%; }
+  }
+
+  .git-skill {
+    background: rgb(217, 248, 145);
+    box-shadow: 2px 0px 8px rgb(213, 223, 189);
+    animation: load-git 3s normal forwards;
+  }
+  
+  @keyframes load-git {
+    0% { width: 0; }
+    100% { width: 20%; }
+  }
+
+  .office-skill {
+    background: rgb(255, 151, 54);
+    box-shadow: 2px 0px 8px rgb(255, 178, 127);
+    animation: load-office 3s normal forwards;
+  }
+  
+  @keyframes load-office {
+    0% { width: 0; }
+    100% { width: 85%; }
+  }
+
+  .photoshop-skill {
+    background: rgb(16, 167, 255);
+    box-shadow: 2px 0px 8px rgb(153, 197, 255);
+    animation: load-photoshop 3s normal forwards;
+  }
+  
+  @keyframes load-photoshop {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+
+  .adobe-skill {
+    background: rgb(187, 44, 92);
+    box-shadow: 2px 0px 8px rgb(241, 94, 143);
+    animation: load-adobe 3s normal forwards;
+  }
+  
+  @keyframes load-adobe {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
+
+  .figma-skill {
+    background: rgb(63, 206, 50);
+    box-shadow: 2px 0px 8px rgb(148, 255, 138);
+    animation: load-figma 3s normal forwards;
+  }
+  
+  @keyframes load-figma {
+    0% { width: 0; }
+    100% { width: 55%; }
+  }
+
+  .wordpress-skill {
+    background: rgb(166, 200, 202);
+    box-shadow: 2px 0px 8px rgb(217, 253, 255);
+    animation: load-wordpress 3s normal forwards;
+  }
+  
+  @keyframes load-wordpress {
+    0% { width: 0; }
+    100% { width: 30%; }
+  }
+
+
+
+  //HTML:
+//   <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>CSS3</h3>
+// </div>
+
+// <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>HTML5</h3>
+// </div>
+
+// <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>JavaScript</h3>
+// </div>
+
+// <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>Pakiet Office</h3>
+// </div>
+
+// <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>Photoshop</h3>
+// </div>
+
+// <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>Figma</h3>
+// </div>
+
+// <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>Jęz. Angielski</h3>
+// </div>
+
+// <div class="circle-container">
+//   <div class="circle">
+//     <div class="number">
+//       <h2>80<span>%</span></h2>
+//     </div>
+//   </div>
+//   <h3>Idesign/Illustraotr</h3>
+// </div>
+
+// .circle-container {
+//     padding: 2%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+//     width: 20%;
+//     height: 50%;
+// }
+
+// .circle {
+//     position: absolute;
+//     width: 90%;
+//     height: 50%;
+//     //border-radius: 100%;
+//     background-color: wheat;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+// }
+
+// .number {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }

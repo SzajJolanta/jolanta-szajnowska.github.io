@@ -1,0 +1,11 @@
+User-agent: *
+
+Sitemap: http://jolanta-szajnowska.pl/sitemap.xml
+
+
+# Other Pesky User Agents
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BUbiNG
+Disallow: /
